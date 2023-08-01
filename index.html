@@ -1,7 +1,177 @@
 <!DOCTYPE html>
-<html> 
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title> Amanda Takahashi </title>
+    <!link rel="stylesheet" href="style.css" />
+</head>
 <body>
-    <h1>Hello World</h1>
-    <p>I'm hosted with GitHub Pages.</p>
+
+    <div class="topnav">
+        <a class="active" href="Website.html">  Home  </a>
+        <a href="About.html">  About  </a>
+        <a href="Projects.html">  Projects  </a>
+        <a href="Contact.html">  Contact  </a>
+    </div>
+
+    <style>
+        /* CSS
+        /* Add a black background color to the top navigation */
+        .topnav {
+            background-color: #DBECF4;
+            overflow: hidden;
+        }
+
+            /* Style the links inside the navigation bar */
+            .topnav a {
+                float: left;
+                color: #194569;
+                text-align: center;
+                font-weight: 100;
+                font-family: sans-serif;
+                padding: 34px 36px;
+                text-decoration: none;
+                font-size: 40px;
+            }
+
+                /* Change the color of links on hover */
+                .topnav a:hover {
+                    background-color: #B7D0E1;
+                    color: #194569;
+                }
+
+                /* Add a color to the active/current link */
+                .topnav a.active {
+                    background-color: #B7D0E1;
+                    font-weight: bold;
+                    color: #194569;
+                }
+    </style>
+
+    <br />
+    <br />
+    <p style="font-family: sans-serif">
+        <!style="background-color:grey;">
+
+        <style>
+            img {
+                border-radius: 50%;
+            }
+        </style>
+
+        <img src="file:///Users/amanda/Desktop/UCI/Career/Personal_Website/me_Square.jpg" alt="me" style="float:right; padding: 15px; width:500px" id="me" />
+
+        <span style="font-size: 64px; font-weight: 100">
+            <FONT COLOR="#5F84A2"> Hello! I am </FONT>
+            <br />
+        </span>
+
+        <span style="font-size: 96px; font-weight: 100">
+            <strong><FONT COLOR="#194569"> Amanda Takahashi </FONT> </strong>
+            <br />
+        </span>
+
+        <span style="font-size: 36px; font-weight: 100">
+            <FONT COLOR="#5F84A2"> <i> B.S. in <b> Computer Game Science  </b> </i> </FONT>
+            <br />
+            <FONT COLOR="#5F84A2"> University of California Irvine 2023 </FONT>
+        </span>
+
+    </p>
+
+    <div class="objects">
+        <ul class=" box">
+            <li> </li>
+            <li> </li>
+            <li> </li>
+            <li> </li>
+            <li> </li>
+            <li> </li>
+        </ul>
+    </div>
+
+    <style>
+        .objects {
+            width: 60%;
+            height: 100vh;
+        }
+
+        .box {
+            position: absolute;
+            top: 100px;
+            left: 0;
+            width: 60%;
+            height: 100%;
+            overflow: hidden;
+        }
+
+            .box li {
+                position: absolute;
+                display: block;
+                list-style: none;
+                width: 25px;
+                height: 25px;
+                background: rgba(118,181,197, 0.7);
+                animation: animate 10s linear infinite;
+                bottom: -150px;
+                border-radius: 50%;
+            }
+
+                .box li:nth-child(1) {
+                    left: 86%;
+                    width: 80px;
+                    height: 80px;
+                    animation-delay: 0s;
+                }
+
+                .box li:nth-child(2) {
+                    left: 12%;
+                    width: 30px;
+                    height: 30px;
+                    animation-delay: 1.5s;
+                    animation-duration: 10s;
+                }
+
+                .box li:nth-child(3) {
+                    left: 70%;
+                    width: 100px;
+                    height: 100px;
+                    animation-delay: 5.5s;
+                }
+
+                .box li:nth-child(4) {
+                    left: 45%;
+                    width: 150px;
+                    height: 150px;
+                    animation-delay: 0s;
+                    animation-duration: 15s;
+                }
+
+                .box li:nth-child(5) {
+                    left: 65%;
+                    width: 110px;
+                    height: 110px;
+                    animation-delay: 3.5s;
+                }
+
+                .box li:nth-child(6) {
+                    left: 15%;
+                    width: 110px;
+                    height: 110px;
+                    animation-delay: 3.5s;
+                }
+
+        @keyframes animate {
+            0% {
+                transform: translateY(0) scale(0)
+            }
+
+            100% {
+                transform: translateY(-800px) scale(2);
+                opacity: 0;
+            }
+        }
+    </style>
+
 </body>
-</html>
+</html> 
