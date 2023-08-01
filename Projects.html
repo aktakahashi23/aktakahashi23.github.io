@@ -112,14 +112,6 @@ body {
 </head>
 <body>
 
-<!-- Header -->
-<div class="header" id="myHeader">
-  <h1>Image Grid</h1>
-  <p>Click on the buttons to change the grid view.</p>
-  <button class="btn" onclick="one()">1</button>
-  <button class="btn active" onclick="two()">2</button>
-  <button class="btn" onclick="four()">4</button>
-</div>
 
 <!-- Photo Grid -->
 <div class="row"> 
@@ -166,13 +158,6 @@ var elements = document.getElementsByClassName("column");
 // Declare a loop variable
 var i;
 
-// Full-width images
-function one() {
-    for (i = 0; i < elements.length; i++) {
-    elements[i].style.msFlex = "100%";  // IE10
-    elements[i].style.flex = "100%";
-  }
-}
 
 // Two images side by side
 function two() {
@@ -182,17 +167,12 @@ function two() {
   }
 }
 
-// Four images side by side
-function four() {
-  for (i = 0; i < elements.length; i++) {
-    elements[i].style.msFlex = "25%";  // IE10
-    elements[i].style.flex = "25%";
-  }
-}
+
+
 
 // Add active class to the current button (highlight it)
 var header = document.getElementById("myHeader");
-var btns = header.getElementsByClassName("btn");
+var btns = 2;
 for (var i = 0; i < btns.length; i++) {
   btns[i].addEventListener("click", function() {
     var current = document.getElementsByClassName("active");
